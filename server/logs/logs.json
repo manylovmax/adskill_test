@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "timestamp": "2024-09-03_18-23-31",
+        "computer_name": "MacBook-Pro-sergei.local",
+        "event_type": "Input",
+        "application": "Opera",
+        "window_title": "Opera",
+        "content": "cfv",
+        "screenshot_url": "logs/screenshots/MacBook-Pro-sergei.local_LogEvent_2024-09-03_18-23-31.jpg"
+    },
+    {
+        "id": 2,
+        "timestamp": "2024-09-03_18-23-32",
+        "computer_name": "MacBook-Pro-sergei.local",
+        "event_type": "Input",
+        "application": "Opera",
+        "window_title": "Opera",
+        "content": "qwerty",
+        "screenshot_url": "logs/screenshots/MacBook-Pro-sergei.local_LogEvent_2024-09-03_18-23-31.jpg"
+    }
+]
