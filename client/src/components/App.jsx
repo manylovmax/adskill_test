@@ -1,19 +1,25 @@
-//import 'whatwg-fetch';
-//import '@babel/polyfill';
-//import 'regenerator-runtime/runtime';
-
 import React from "react";
+import {
+   createBrowserRouter,
+   RouterProvider,
+ } from "react-router-dom";
+ import LogListPage from "./LogListPage";
+ import LogDetailPage , { loader as logLoader }from "./LogDetailPage";
 
 
-class App extends React.Component { 
+ const router = createBrowserRouter([
+   {
+     path: "/",
+     element: <LogListPage />,
+   },
+   {
+     path: "/log/:logId",
+     element: <LogDetailPage />,
+     loader: logLoader
+   },
+ ]);
 
-   render() {
-	   
-      return (
-         <div>		
-         </div>
-      );
-   }
+
+export default function App() { 
+   return (<RouterProvider router={router} />);
 }
-
-export default App;
