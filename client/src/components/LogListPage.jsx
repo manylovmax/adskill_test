@@ -17,7 +17,6 @@ class LogListPage extends React.Component {
 
   render() {
     const { logs } = this.state;
-    console.log(logs);
     return (
       <div>
         {logs.map((item, key) => (

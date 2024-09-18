@@ -7,8 +7,8 @@ export default function LogListItem({log}) {
     <Link to={'/logs/' + log.id}>
         <div>
             <p>Log ID: {log.id}</p>
-            <p>timestamp: {log.timestamp}</p>
-            <p>computer_name: {log.computer_name}</p>
+            <p>Timestamp: {log.timestamp}</p>
+            <p>Computer name: {log.computer_name}</p>
         </div>
     </Link>
     );

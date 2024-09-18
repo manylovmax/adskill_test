@@ -13,7 +13,7 @@ import {
      element: <LogListPage />,
    },
    {
-     path: "/log/:logId",
+     path: "/logs/:logId",
      element: <LogDetailPage />,
      loader: logLoader
    },

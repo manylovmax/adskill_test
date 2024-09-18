@@ -1,16 +1,15 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 
+import axios from 'axios';
+
 async function getLog(logId) {
-    return await axios.get('http://127.0.0.1:8000/logs/' + logId)
-    .then(function (response) {
-    // handle success
-    console.log(response);
-    })
+    const response = await axios.get('http://127.0.0.1:8000/logs/' + logId)
     .catch(function (error) {
-    // handle error
-    console.log(error);
-    })
+        // handle error
+        console.log(error);
+    });
+    return response.data;
 }
 
 
@@ -23,12 +22,16 @@ export async function loader({ params }) {
 export default function LogDetailPage () {
     const { log } = useLoaderData();
 
-
     return (
     <div>
         <p>Log ID: {log.id}</p>
-        <p>timestamp: {log.timestamp}</p>
-        <p>computer_name: {log.computer_name}</p>
+        <p>Timestamp: {log.timestamp}</p>
+        <p>Computer name: {log.computer_name}</p>
+        <p>Event type: {log.event_type}</p>
+        <p>Application: {log.application}</p>
+        <p>Window title: {log.window_title}</p>
+        <p>Content: {log.content}</p>
+        <p>Screenshot url: {log.screenshot_url}</p>
     </div>
     )
 }
