@@ -18,10 +18,16 @@ class LogListPage extends React.Component {
   render() {
     const { logs } = this.state;
     return (
-      <div>
-        {logs.map((item, key) => (
-          <LogListItem log={item} key={key} />
-        ))}
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className='log-list'>
+              {logs.map((item, key) => (
+                <LogListItem log={item} key={key} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

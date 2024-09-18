@@ -1,1 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
+
+.log-list a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+}
+
+.card {
+    margin: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+}
