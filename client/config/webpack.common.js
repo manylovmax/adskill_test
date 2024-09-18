@@ -68,11 +68,6 @@ module.exports = {
   module: {
     rules: [
       // JavaScript: Use Babel to transpile JavaScript files
-      {
-		  test: /\.js$/, 
-		  exclude: /node_modules/, 
-		  use: ['babel-loader']},
-	  
 	   {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
