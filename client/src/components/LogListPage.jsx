@@ -9,7 +9,7 @@ class LogListPage extends React.Component {
   };
 
   componentDidMount() {
-    axios.get('http://127.0.0.1:8000/logs').then(response => {
+    axios.get('http://server:8000/logs').then(response => {
         this.setState({logs: response.data});
     });
     

@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import axios from 'axios';
 
 async function getLog(logId) {
-    const response = await axios.get('http://127.0.0.1:8000/logs/' + logId)
+    const response = await axios.get('http://server:8000/logs/' + logId)
     .catch(function (error) {
         // handle error
         console.log(error);
